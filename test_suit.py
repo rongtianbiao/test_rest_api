@@ -12,6 +12,6 @@ if __name__ == "__main__":
     now = time.strftime("%Y-%m-%d %H-%M-%S")
     filename = "./test_report/" + u"rest接口测试报告 " + now + ".html"
     with open(filename, "wb") as fp:
-        runner = HTMLTestRunnerCN.HTMLTestRunner(stream=fp, title="防火墙rest接口测试报告", description="报告详情",
-                                                 tester="荣天彪")
+        runner = HTMLTestRunnerCN.HTMLTestRunner(stream=fp, title="rest接口测试报告", description="报告详情",
+                                                 tester="天台")
         runner.run(discover)
